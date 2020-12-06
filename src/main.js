@@ -17,9 +17,19 @@ export default class App {
         return(totalImpares);
     }
 
+    sumarParesWhile(){
+        let total=0;
+        let i=2;
+        while(i<=20){
+            total = total + i;
+            i+=2;
+        }
+        return(total);
+    }
     
 }
 
 let app = new App();
 console.log("La suma de pares del 2 - 20 es: "+app.sumarParesFor());
 console.log("Entre el 0 y el 6 hay "+app.contarImparesFor(2,10)+" numeros impares");
+console.log("La suma de pares del 2 - 20 es: "+app.sumarParesWhile());
