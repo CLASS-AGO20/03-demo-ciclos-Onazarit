@@ -29,12 +29,11 @@ export default class App {
 
     contarImparesWhile(inicio, fin){
         let totalImpares = 0;
-        do{
-            if(inicio % 2 != 0){
+        while(inicio <= fin){
+            if(inicio %2 !=0)
                 totalImpares++;
-            }
             inicio++;
-        }while(inicio <= fin);
+        }
         return(totalImpares);
     }
     
