@@ -45,6 +45,17 @@ export default class App {
         }while(i<=20)
         return(total);
     }
+
+    contarImparesDo(inicio, fin){
+        let totalImpares=0;
+        do{
+            if(inicio % 2 != 0){
+                totalImpares++;
+            }
+            inicio++;
+        }while(inicio <= fin);
+        return(totalImpares);
+    }
 }
 
 let app = new App();
@@ -53,3 +64,4 @@ console.log("Entre el 2 y el 10 hay "+app.contarImparesFor(2,10)+" numeros impar
 console.log("La suma de pares del 2 - 20 es: "+app.sumarParesWhile());
 console.log("Entre el 8 y el 20 hay "+app.contarImparesWhile(8,20)+" numeros impares");
 console.log("La suma de pares del 2 - 20 es: "+app.sumarParesDo());
+console.log("Entre el 10 y el 40 hay "+app.contarImparesDo(10,40)+" numeros impares");
